@@ -22,3 +22,17 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+# After cloning
+
+* Install yarn from https://yarnpkg.com/en/docs/install#windows-stable
+
+* Run these commands.
+
+  - yarn install
+  
+  - rails webpacker:install
+  
+  - rails server (rails s)
+
