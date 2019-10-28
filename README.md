@@ -36,3 +36,7 @@ Things you may want to cover:
   
   - rails server (rails s)
 
+* It works on localhost:3000.
+
+Take a look if it works.
+
