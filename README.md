@@ -38,5 +38,4 @@ Things you may want to cover:
 
 * It works on localhost:3000.
 
-Take a look if it works.
 
