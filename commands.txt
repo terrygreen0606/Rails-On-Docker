@@ -1,0 +1,33 @@
+{% comment %} 
+documentation link : https://www.freecodecamp.org/news/painless-rails-development-environment-setup-with-docker/
+{% endcomment %}
+
+{% comment %} Run these commands one by one, then it runs on localhost:3000 {% endcomment %}
+docker-compose build
+
+docker-compose run --rm --service-ports ruby_dev    (takes long and if error occurs, run the commands down below in the comment)
+
+rails new rails-docker
+
+cd rails-docker
+
+bundle update
+
+bundle install
+
+rails server -p $PORT -b 0.0.0.0
+
+// To run another bash in the same container
+docker exec -it container_name_or_id /bin/bash
+ctrl -d to quit bash
+
+// curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && apt-get update && apt-get install yarn
+
+{% comment %} 
+// Check if the port is currently running.
+netstat -ano | findstr :yourPortNumber
+
+// Kill the port
+taskkill /PID yourPIDhere /F
+
+{% endcomment %}
